@@ -62,7 +62,7 @@ int main(void)
 
 
 	//---------C---------
-	shmfd = shm_open("/blydrC_memory", O_RDWR | O_CREAT, 0666);
+	shmfd = shm_open("/blydr_memory", O_RDWR | O_CREAT, 0666);
 	if (shmfd < 0) {
 		fprintf(stderr, "Could not create blydr_memory\n");
 		exit(1);
